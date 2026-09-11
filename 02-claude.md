@@ -6,7 +6,8 @@ Jupyter AI uses the **Agent Client Protocol (ACP)** to communicate with Claude.
 
 Check if you have Node.js installed with current release. In the anaconda prompt run:
 
-```node --version
+```bash
+node --version
 ```
 
 I found node v26.8.1 works best, but as long as you have something similar it might be okay and you can move to next step.
