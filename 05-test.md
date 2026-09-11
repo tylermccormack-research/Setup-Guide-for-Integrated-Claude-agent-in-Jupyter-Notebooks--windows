@@ -6,13 +6,7 @@ In a JupyterLab notebook or chat, try:
 @Claude say hello
 ```
 
-Then try something more useful:
-
-```text
-@Claude explain this notebook
-```
-
-Or:
+Then try something more useful if you want:
 
 ```text
 @Claude help me write Python code for this analysis
