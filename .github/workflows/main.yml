@@ -1,0 +1,15 @@
+site_name: Setup Guide — Integrated Claude Agent in Jupyter Notebooks
+site_description: Setup guide for Windows
+
+theme:
+  name: material
+
+nav:
+  - Home: README.md
+  - 1. Installation: 01-installation.md
+  - 2. Claude Setup: 02-claude.md
+  - 3. Windows Fix: 03-windows-fix.md
+  - 4. Authentication: 04-authentication.md
+  - 5. Testing: 05-test.md
+  - 6. Troubleshooting: 06-troubleshooting.md
+  - Versions: versions.md
