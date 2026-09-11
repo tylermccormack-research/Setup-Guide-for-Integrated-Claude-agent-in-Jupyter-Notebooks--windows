@@ -19,3 +19,5 @@ jupyter lab
 JupyterLab should open in your browser.
 
 **Stop here if JupyterLab does not start.**
+
+If it works, close out by exiting the browser and hitting Ctrl+C in the anaconda prompt
