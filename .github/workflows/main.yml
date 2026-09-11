@@ -1,15 +1,34 @@
-site_name: Setup Guide — Integrated Claude Agent in Jupyter Notebooks
-site_description: Setup guide for Windows
+name: Deploy MkDocs
 
-theme:
-  name: material
+on:
+  push:
+    branches:
+      - main
 
-nav:
-  - Home: README.md
-  - 1. Installation: 01-installation.md
-  - 2. Claude Setup: 02-claude.md
-  - 3. Windows Fix: 03-windows-fix.md
-  - 4. Authentication: 04-authentication.md
-  - 5. Testing: 05-test.md
-  - 6. Troubleshooting: 06-troubleshooting.md
-  - Versions: versions.md
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+
+      - run: pip install mkdocs-material
+
+      - run: mkdocs build
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - uses: actions/deploy-pages@v4
